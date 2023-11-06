@@ -27,7 +27,7 @@ if __name__ == '__main__':
     params = np.array([value['params'] / 1e6 for k, value in data.items()])
 
     plt.figure(dpi=400, figsize=(6, 3.5))
-    sns.scatterplot(flops, acc1, size=params, sizes=(15, 90), edgecolor=my_border_color, facecolor=my_colors[0])
+    sns.scatterplot(x=flops, y=acc1, size=params, sizes=(15, 90), edgecolor=my_border_color, facecolors=my_colors[0])
     anchor_acc1 = acc1[:3]
     anchor_flops = flops[:3]
 
